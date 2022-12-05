@@ -49,3 +49,4 @@ def nod(n1, n2):
     return res
 
 print(nok(n1, n2), nod(n1, n2))
+#

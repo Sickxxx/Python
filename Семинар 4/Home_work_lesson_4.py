@@ -1,33 +1,33 @@
 # Задание 1. Вычислить число ПИ c заданной точностью d
-# import math
-#
-# d = int(input("Введите количество знаков после запятой: "))
-# pi = str(math.pi)
-# for i in range(d+2):
-#     print(pi[i], end="")
+import math
+
+d = int(input("Введите количество знаков после запятой: "))
+pi = str(math.pi)
+for i in range(d+2):
+    print(pi[i], end="")
 
 # Задание 2. Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
-# n = int(input("Введите число N: "))
-# def multiplier(n):
-#     arr=[]
-#     for i in range(1,n+1):
-#         if n%i==0:
-#             arr.append(i)
-#     return arr
-# print(f"Все простые множители числа {n}: {multiplier(n)}")
+n = int(input("Введите число N: "))
+def multiplier(n):
+    arr=[]
+    for i in range(1,n+1):
+        if n%i==0:
+            arr.append(i)
+    return arr
+print(f"Все простые множители числа {n}: {multiplier(n)}")
 
 # Задание 3. Задайте последовательность чисел. Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
 import random as r
 
 
-# a = [r.randint(1, 10) for i in range(r.randint(5,10))]
-# print(a)
-# print("Последовательность из неповторяющихся элементов:")
-# new_a = [i for i in a if a.count(i) == 1]
-# print(new_a)
+a = [r.randint(1, 10) for i in range(r.randint(5,10))]
+print(a)
+print("Последовательность из неповторяющихся элементов:")
+new_a = [i for i in a if a.count(i) == 1]
+print(new_a)
 
 # Звдание 4. Задана натуральная степень k. Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена и записать в файл многочлен степени k(до 6 степени).*
-# k = int(input("Введите степень k: "))
+k = int(input("Введите степень k: "))
 def polynomial(k, a = []):
     b = ""
     if len(a) == 0:
@@ -60,10 +60,10 @@ def polynomial(k, a = []):
     return b
 
 
-# with open("file1.txt", 'w') as file1:
-#     file1.write(polynomial(k))
-# with open("file1.txt", 'r') as file1:
-#     print(file1.readline())
+with open("file1.txt", 'w') as file1:
+    file1.write(polynomial(k))
+with open("file1.txt", 'r') as file1:
+    print(file1.readline())
 
 # Задание 5. Даны два файла, в каждом из которых находится запись многочлена. Задача - сформировать файл, содержащий сумму многочленов.*
 with open("file1.txt", 'w') as file1:
