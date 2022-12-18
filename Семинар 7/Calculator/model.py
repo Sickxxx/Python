@@ -1,0 +1,20 @@
+x = 0
+y = 0
+
+
+def init(a, b):
+    global x
+    global y
+    x = a
+    y = b
+
+
+def do_it(i):
+    if i == "*":
+        return x * y
+    elif i == "/":
+        return x / y
+    elif i == "+":
+        return x + y
+    else:
+        return x - y
